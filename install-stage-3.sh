@@ -44,6 +44,7 @@ echo -e "cd to html? \n"
 cd /var/www/html/
 sleep 3
 echo -e "new laravel app \n"
+sudo chown frank /var/www/html
 laravel new laravel 
 echo -e "#sudo chown -R :www-data /var/www/html/laravel \n"
 sudo chown -R :www-data /var/www/html/laravel
