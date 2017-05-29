@@ -30,26 +30,25 @@ sleep 1
 composer global require "laravel/installer"
 
 sudo echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> ~/.bashrc 
+. ~/.bashrc 
+echo -e "try laravel \n"
+#laravel
+#sleep 3
+#echo -e "laravel works? \n"
+#sleep 3
 
-echo -e "run laravel \n"
-laravel
-sleep 3
-echo -e "laravel works? \n"
-sleep 3
-echo -e "install git? \n"
-sudo apt install git
 
-sleep 3
-echo -e "cd to html? \n"
-cd /var/www/html/
-sleep 3
-echo -e "new laravel app \n"
-sudo chown frank /var/www/html
-laravel new laravel 
+#sleep 3
+#echo -e "cd to html? \n"
+#cd /var/www/html/
+#sleep 3
+#echo -e "new laravel app \n"
+#sudo chown frank /var/www/html
+#laravel new laravel 
 echo -e "#sudo chown -R :www-data /var/www/html/laravel \n"
-sudo chown -R :www-data /var/www/html/laravel
+#sudo chown -R :www-data /var/www/html/laravel
 echo -e "#sudo chmod -R 775 /var/www/html/laravel/storage \n"
-sudo chmod -R 775 /var/www/html/laravel/storage
+#sudo chmod -R 775 /var/www/html/laravel/storage
 
 
 
