@@ -54,6 +54,8 @@ echo -e "Search for the cgi.fix_pathinfo parameter in this file  /etc/php/7.0/fp
 sleep 1
 
 #sudo mkdir -p /var/www/laravel
-sudo chown frank /var/www/html
+#sudo chown frank /var/www/html
+sudo chown -R :www-data /var/www/html
+
 echo -e "creating php info file \n"
 echo "<?php phpinfo(); ?>" >> /var/www/html/info.php
