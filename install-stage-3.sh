@@ -28,8 +28,8 @@ echo -e "installing laravel \n"
 sleep 1
 
 composer global require "laravel/installer"
-
-sudo echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> ~/.bashrc 
+sudo echo 'export PATH="~/.config/composer/vendor/bin:$PATH"' >> ~/.bashrc 
+#sudo echo 'export PATH=$HOME/.composer/vendor/bin:$PATH' >> ~/.bashrc 
 . ~/.bashrc 
 echo -e "try laravel \n"
 #laravel
